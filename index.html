@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b09">
+  <meta name="description" content="VAULT — descubra, explore e garanta seu próximo jogo favorito.">
+  <title>VAULT — Seu próximo jogo está aqui</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement-bar">
+    <div class="announcement-inner">
+      <span class="announcement-dot"></span>
+      <p><strong>VAULT DROP:</strong> ofertas insanas por tempo limitado</p>
+      <a href="#ofertas">EXPLORAR OFERTAS <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="header-main page-shell">
+      <button class="icon-button mobile-menu-toggle" id="mobileMenuToggle" aria-label="Abrir menu" aria-expanded="false"><span class="hamburger"><i></i><i></i><i></i></span></button>
+      <a class="brand" href="#inicio" aria-label="VAULT início">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 42 42" role="img"><path d="M5 8.5h8.1L21 26l7.9-17.5H37L24.5 34h-7L5 8.5Z"/><path d="M10 4.5h22" class="brand-cut"/></svg>
+        </span>
+        <span class="brand-name">VAULT<span>.</span><small>GAME MARKET</small></span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
+        <a class="nav-link active" href="#inicio">Início</a>
+        <a class="nav-link" href="#catalogo">Descobrir</a>
+        <a class="nav-link" href="#ofertas">Ofertas</a>
+        <a class="nav-link" href="#categorias">Categorias</a>
+        <a class="nav-link" href="#comunidade">Comunidade <span class="nav-external">↗</span></a>
+      </nav>
+
+      <div class="header-actions">
+        <label class="search-box" for="globalSearch">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.5 4.5"></path></svg>
+          <input id="globalSearch" type="search" placeholder="Buscar jogos..." autocomplete="off" aria-label="Buscar jogos">
+          <kbd>⌘ K</kbd>
+        </label>
+        <button class="icon-button wishlist-header" id="wishlistToggle" aria-label="Mostrar lista de desejos" title="Lista de desejos">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 8.8c0 5.1-8.8 10-8.8 10S3.2 13.9 3.2 8.8A4.6 4.6 0 0 1 12 6.4a4.6 4.6 0 0 1 8.8 2.4Z"/></svg>
+          <span class="action-count" id="wishlistCount">0</span>
+        </button>
+        <button class="icon-button cart-header" id="cartToggle" aria-label="Abrir carrinho" title="Carrinho">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.1 11.1a2 2 0 0 0 2 1.6h8.8a2 2 0 0 0 1.9-1.5L21 8H6"/><circle cx="10" cy="20" r="1.2"/><circle cx="18" cy="20" r="1.2"/></svg>
+          <span class="action-count cart-count" id="cartCount">0</span>
+        </button>
+        <button class="login-button" id="loginOpen"><span class="avatar-icon">◉</span><span id="loginButtonText">Entrar</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero-section page-shell" aria-label="Destaques">
+      <div class="hero-frame" id="heroFrame">
+        <div class="hero-art" id="heroArt"></div>
+        <div class="hero-grid-overlay"></div>
+        <div class="hero-content" aria-live="polite">
+          <div class="eyebrow"><span class="eyebrow-line"></span><span id="heroEyebrow">DESTAQUE DA SEMANA</span></div>
+          <h1 id="heroTitle">UM NOVO<br><span>UNIVERSO</span><br>TE ESPERA.</h1>
+          <p class="hero-description" id="heroDescription">Histórias inesquecíveis. Mundos sem limites. Sua próxima obsessão começa aqui.</p>
+          <div class="hero-meta" id="heroMeta"><span class="platform-chip">PC</span><span>★★★★☆ <small>Altamente recomendado</small></span></div>
+          <div class="hero-cta-row">
+            <button class="button button-primary" id="heroPrimary"><span>Explorar jogo</span><span class="button-arrow">↗</span></button>
+            <button class="button button-ghost" id="heroSecondary">Ver biblioteca <span>→</span></button>
+          </div>
+        </div>
+        <div class="hero-bottomline"><span class="mono" id="heroCounter">01 / 03</span><div class="hero-dots" id="heroDots" aria-label="Selecionar destaque"></div><span class="hero-side-label">PLAY BEYOND LIMITS <b>✳</b></span></div>
+        <div class="hero-controls"><button id="heroPrev" aria-label="Destaque anterior">←</button><button id="heroNext" aria-label="Próximo destaque">→</button></div>
+        <div class="hero-vertical-label">VLT / 2026</div>
+      </div>
+      <div class="quick-stats" aria-label="Sobre a VAULT">
+        <div><span class="stat-symbol">✳</span><p><strong>Jogos para todos</strong><small>Do indie ao AAA</small></p></div>
+        <div><span class="stat-symbol">⌁</span><p><strong>Ofertas frequentes</strong><small>Seu próximo favorito, por menos</small></p></div>
+        <div><span class="stat-symbol">◈</span><p><strong>Feito pra jogar</strong><small>Uma experiência sem complicação</small></p></div>
+        <div class="stats-code"><span>VLT_SYS / ONLINE</span><strong>99.9<span>%</span></strong><small>GAMING MODE</small></div>
+      </div>
+    </section>
+
+    <section class="section page-shell" id="catalogo">
+      <div class="section-heading">
+        <div><div class="section-kicker"><span>01</span> / A PRÓXIMA AVENTURA</div><h2>Descubra seu <span>próximo jogo.</span></h2><p>Curadoria de respeito. Novos mundos para explorar.</p></div>
+        <a class="text-link" href="#catalogo-grid">Ver catálogo completo <span>↗</span></a>
+      </div>
+
+      <div class="catalog-toolbar">
+        <div class="filter-tabs" role="group" aria-label="Filtrar jogos">
+          <button class="filter-tab selected" data-filter="all">Tudo <span class="tab-count">08</span></button>
+          <button class="filter-tab" data-filter="popular">Populares</button>
+          <button class="filter-tab" data-filter="new">Novidades <span class="new-dot"></span></button>
+          <button class="filter-tab" data-filter="deals">Em oferta</button>
+        </div>
+        <label class="sort-control">Ordenar por <select id="sortSelect" aria-label="Ordenar catálogo"><option value="featured">Destaques</option><option value="price-low">Menor preço</option><option value="price-high">Maior preço</option><option value="rating">Melhor avaliação</option></select></label>
+      </div>
+      <div class="active-filter-line"><p id="resultsLabel">MOSTRANDO <strong>08 JOGOS</strong></p><button class="clear-search" id="clearSearch" hidden>Limpar busca <span>×</span></button><span class="catalog-coordinate">COORD: 04.03 / VLT</span></div>
+      <div class="game-grid" id="catalogGrid" aria-live="polite"></div>
+      <div class="empty-state" id="emptyState" hidden><span>⌕</span><h3>Nenhum jogo encontrado.</h3><p>Tenta outro nome ou muda os filtros, meu chapa.</p><button class="button button-outline" id="resetFilters">Limpar filtros</button></div>
+      <div class="catalog-footer"><span><i></i> CATÁLOGO ATUALIZADO</span><button class="button button-outline" id="loadMore">Carregar mais <span>↓</span></button><span class="mono">VAULT_INDEX_008</span></div>
+    </section>
+
+    <section class="deal-section" id="ofertas">
+      <div class="page-shell deal-inner">
+        <div class="deal-copy">
+          <div class="section-kicker"><span>02</span> / OPORTUNIDADES</div>
+          <div class="deal-title-lockup"><span class="deal-outline">DROP</span><h2>DEALS<span>.</span></h2></div>
+          <p>Preço baixo. Gameplay alto. Não deixa passar o jogo que tu tava esperando.</p>
+          <div class="countdown-block"><span>PRÓXIMO RESET EM</span><div id="countdown"><b>08</b><i>:</i><b>42</b><i>:</i><b>16</b></div><small>Ofertas demonstrativas do protótipo</small></div>
+          <a class="button button-primary" href="#catalogo" id="dealBrowse">Ver todas as ofertas <span class="button-arrow">↗</span></a>
+        </div>
+        <div class="deal-showcase" id="dealShowcase"></div>
+      </div>
+    </section>
+
+    <section class="section page-shell" id="categorias">
+      <div class="section-heading compact-heading">
+        <div><div class="section-kicker"><span>03</span> / DO SEU JEITO</div><h2>Encontre seu <span>território.</span></h2></div>
+        <p class="heading-aside">Cada player tem seu estilo.<br>Qual é o teu?</p>
+      </div>
+      <div class="genre-grid">
+        <button class="genre-card genre-action" data-genre="Ação"><span class="genre-index">GNR_01</span><span class="genre-art">✳</span><span class="genre-content"><strong>Ação</strong><small>Reflexo no limite</small></span><span class="genre-arrow">↗</span></button>
+        <button class="genre-card genre-rpg" data-genre="RPG"><span class="genre-index">GNR_02</span><span class="genre-art">◈</span><span class="genre-content"><strong>RPG</strong><small>Outra vida te espera</small></span><span class="genre-arrow">↗</span></button>
+        <button class="genre-card genre-indie" data-genre="Indie"><span class="genre-index">GNR_03</span><span class="genre-art">⌁</span><span class="genre-content"><strong>Indie</strong><small>Grandes ideias, mundos únicos</small></span><span class="genre-arrow">↗</span></button>
+        <button class="genre-card genre-survival" data-genre="Sobrevivência"><span class="genre-index">GNR_04</span><span class="genre-art">⟁</span><span class="genre-content"><strong>Sobrevivência</strong><small>Até onde tu aguenta?</small></span><span class="genre-arrow">↗</span></button>
+      </div>
+    </section>
+
+    <section class="community-section page-shell" id="comunidade">
+      <div class="community-panel">
+        <div class="community-decoration">V<span>A</span>ULT<br><small>PLAYER NETWORK</small><div class="decoration-cross">+</div></div>
+        <div class="community-copy"><div class="section-kicker"><span>04</span> / ALÉM DO GAME</div><h2>Não é só jogar.<br><span>É fazer parte.</span></h2><p>Monte sua lista de desejos, acompanhe seus favoritos e prepare sua próxima jogatina. A comunidade VAULT tá só começando.</p><div class="community-pills"><span>✳ Descobertas</span><span>◈ Favoritos</span><span>⌁ Novidades</span></div><button class="button button-primary" id="communityJoin">Entrar para a VAULT <span class="button-arrow">↗</span></button></div>
+        <div class="community-side-note"><span>NO PLAYER LEFT BEHIND</span><strong>VLT_004</strong><span>COMMUNITY / ONLINE</span></div>
+      </div>
+    </section>
+
+    <section class="newsletter-section page-shell">
+      <div class="newsletter-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 12h36v25H6z"/><path d="m7 14 17 13 17-13"/><path d="M17 6h14"/></svg></div>
+      <div class="newsletter-copy"><span class="section-kicker">VAULT TRANSMISSION</span><h2>As novidades chegam <span>primeiro pra ti.</span></h2><p>Ofertas, lançamentos e drops direto no teu e-mail. Sem spam, só game.</p></div>
+      <form class="newsletter-form" id="newsletterForm"><label for="newsletterEmail" class="sr-only">Seu e-mail</label><input type="email" id="newsletterEmail" placeholder="teuemail@exemplo.com" required><button type="submit" aria-label="Cadastrar e-mail">INSCREVER <span>↗</span></button><small id="newsletterMessage">Ao se cadastrar, você concorda com nossa política de privacidade.</small></form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main page-shell">
+      <div class="footer-brand-block"><a class="brand footer-brand" href="#inicio"><span class="brand-mark"><svg viewBox="0 0 42 42" aria-hidden="true"><path d="M5 8.5h8.1L21 26l7.9-17.5H37L24.5 34h-7L5 8.5Z"/><path d="M10 4.5h22" class="brand-cut"/></svg></span><span class="brand-name">VAULT<span>.</span><small>GAME MARKET</small></span></a><p>Seu próximo universo começa com um clique.</p><div class="social-links"><a href="#comunidade" aria-label="Discord">DS</a><a href="#comunidade" aria-label="Instagram">IG</a><a href="#comunidade" aria-label="X">X</a></div></div>
+      <div class="footer-column"><h3>EXPLORAR</h3><a href="#catalogo">Todos os jogos</a><a href="#ofertas">Ofertas</a><a href="#categorias">Categorias</a><a href="#catalogo">Lançamentos</a></div>
+      <div class="footer-column"><h3>VAULT</h3><a href="#comunidade">Sobre nós</a><a href="#comunidade">Comunidade</a><a href="#comunidade">Carreiras</a><a href="#comunidade">Contato</a></div>
+      <div class="footer-column"><h3>SUPORTE</h3><a href="#comunidade">Central de ajuda</a><a href="#comunidade">Minha conta</a><a href="#comunidade">Reembolsos</a><a href="#comunidade">Acessibilidade</a></div>
+      <div class="footer-status"><span class="status-led"></span><div><strong>SISTEMAS OPERACIONAIS</strong><small>Todos os sistemas em funcionamento</small></div><span class="status-code">OK_200</span></div>
+    </div>
+    <div class="footer-bottom page-shell"><span>© 2026 VAULT GAME MARKET. PROJETO DEMONSTRATIVO.</span><div><a href="#comunidade">Privacidade</a><a href="#comunidade">Termos</a><a href="#comunidade">Cookies</a></div><span class="footer-build">BUILD 1.0.0 // BR</span></div>
+  </footer>
+
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Carrinho de compras" aria-hidden="true">
+    <div class="drawer-heading"><div><span class="section-kicker">VAULT / CHECKOUT</span><h2>Seu carrinho<span>.</span></h2></div><button class="icon-button close-cart" id="cartClose" aria-label="Fechar carrinho">×</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-empty" id="cartEmpty"><span>⌑</span><h3>Teu carrinho tá vazio.</h3><p>Tem um universo inteiro esperando por ti.</p><button class="button button-outline" id="emptyCartBrowse">Explorar jogos <span>↗</span></button></div>
+    <div class="cart-summary" id="cartSummary"><div><span>Subtotal</span><strong id="cartSubtotal">R$ 0,00</strong></div><div><span>Descontos</span><strong class="discount-value" id="cartDiscount">− R$ 0,00</strong></div><div class="cart-total"><span>Total</span><strong id="cartTotal">R$ 0,00</strong></div><p>Checkout demonstrativo: nenhum pagamento será realizado.</p><button class="button button-primary checkout-button" id="checkoutButton">Continuar para pagamento <span>↗</span></button><div class="payment-methods"><span>PIX</span><span>VISA</span><span>MASTER</span><span>PAYPAL</span></div></div>
+  </aside>
+
+  <div class="modal-wrap" id="modalWrap" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <section class="modal" id="modalContent" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" data-close-modal aria-label="Fechar janela">×</button><div id="modalBody"></div></section>
+  </div>
+  <div class="toast-region" id="toastRegion" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
