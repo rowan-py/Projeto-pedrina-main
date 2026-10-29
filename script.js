@@ -10,6 +10,27 @@ const coverBase = 'https://cdn.akamai.steamstatic.com/steam/apps/';
 const games = [
     
   {
+    id: 'Force-os-horizontes-5',
+    title: 'Forza Horizon 5',
+    category: 'corrida/mundo aberto',
+    genre: 'Racing',
+    tags: ['popular'],
+    rating: 96,
+    reviews: '599k',
+    price: 129.99,
+    oldPrice: null,
+    discount: 0,
+    badge: 'ROGUELIKE',
+    appId: 1551360,
+    color: '#603b35',
+    glyph: 'FH5',
+    popularity: 93,
+    isNew: false,
+    description: 'Explore o mundo aberto do México em um dos jogos de corrida mais aclamados, com uma variedade de carros e eventos emocionantes.'
+  }
+,
+    
+  {
     id: 'binding-isaac',
     title: 'The Binding of Isaac: Rebirth',
     category: 'Indie / Roguelike',
@@ -28,7 +49,7 @@ const games = [
     isNew: false,
     description: 'Enfrente criaturas bizarras, descubra tesouros misteriosos e sobreviva em um roguelike de ação com fases geradas aleatoriamente.'
   }
-  ,
+,
   {
     id: 'cyberpunk',
     title: 'Cyberpunk 2077',
