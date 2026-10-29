@@ -9,7 +9,6 @@ const coverBase = 'https://cdn.akamai.steamstatic.com/steam/apps/';
 
 const games = [
     
-    
 {
   id: 'ark-ase',
   title: 'ARK: Survival Evolved',
