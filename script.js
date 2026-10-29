@@ -20,7 +20,7 @@ const games = [
     price: 129.99,
     oldPrice: null,
     discount: 0,
-    badge: 'ROGUELIKE',
+    badge: 'MUNDO ABERTO',
     appId: 1551360,
     color: '#603b35',
     glyph: 'FH5',
