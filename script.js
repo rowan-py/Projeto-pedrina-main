@@ -8,6 +8,27 @@ const money = new Intl.NumberFormat('pt-BR', {
 const coverBase = 'https://cdn.akamai.steamstatic.com/steam/apps/';
 
 const games = [
+    
+  {
+    id: 'binding-isaac',
+    title: 'The Binding of Isaac: Rebirth',
+    category: 'Indie / Roguelike',
+    genre: 'Indie',
+    tags: ['popular'],
+    rating: 96,
+    reviews: '466k',
+    price: 39.99,
+    oldPrice: null,
+    discount: 0,
+    badge: 'ROGUELIKE',
+    appId: 250900,
+    color: '#603b35',
+    glyph: 'ISAAC',
+    popularity: 93,
+    isNew: false,
+    description: 'Enfrente criaturas bizarras, descubra tesouros misteriosos e sobreviva em um roguelike de ação com fases geradas aleatoriamente.'
+  }
+  ,
   {
     id: 'cyberpunk',
     title: 'Cyberpunk 2077',
@@ -970,7 +991,7 @@ function checkout() {
         </div>
 
         <p>
-          Você testou a experiência de compra da VAULT. O próximo passo
+          Você testou a experiência de compra da VAULT.  O próximo passo
           para produção seria integrar pagamentos e um backend seguro.
         </p>
 
