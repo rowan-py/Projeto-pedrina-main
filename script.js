@@ -38,7 +38,7 @@ const games = [
   reviews: '120k',
   price: 55.00,
   oldPrice: 220.00,
-  discount: 75,
+  discount: 0,
   badge: 'NEXT-GEN',
   appId: 2399830,
   color: '#526b50',
@@ -1051,8 +1051,7 @@ function checkout() {
         </div>
 
         <p>
-          Você testou a experiência de compra da VAULT.  O próximo passo
-          para produção seria integrar pagamentos e um backend seguro.
+          Você testou a experiência de compra da VAULT. 
         </p>
 
         <button
