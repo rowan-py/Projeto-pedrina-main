@@ -9,6 +9,46 @@ const coverBase = 'https://cdn.akamai.steamstatic.com/steam/apps/';
 
 const games = [
     
+    
+{
+  id: 'ark-ase',
+  title: 'ARK: Survival Evolved',
+  category: 'Sobrevivência / Mundo aberto',
+  genre: 'Sobrevivência',
+  tags: ['popular'],
+  rating: 83,
+  reviews: '580k',
+  price: 49.99,
+  oldPrice: null,
+  discount: 0,
+  badge: 'SURVIVAL',
+  appId: 346110,
+  color: '#426047',
+  glyph: 'ARK',
+  popularity: 95,
+  isNew: false,
+  description: 'Sobreviva em uma ilha misteriosa, dome dinossauros, construa sua base e explore um mundo pré-histórico cheio de perigos.'
+},
+{
+  id: 'ark-asa',
+  title: 'ARK: Survival Ascended',
+  category: 'Sobrevivência / Mundo aberto',
+  genre: 'Sobrevivência',
+  tags: ['popular', 'new'],
+  rating: 60,
+  reviews: '120k',
+  price: 199.99,
+  oldPrice: null,
+  discount: 0,
+  badge: 'NEXT-GEN',
+  appId: 2399830,
+  color: '#526b50',
+  glyph: 'ASA',
+  popularity: 90,
+  isNew: false,
+  description: 'Redescubra a sobrevivência com dinossauros em uma versão reconstruída com Unreal Engine 5, explore, construa e dome criaturas.'
+},
+
   {
     id: 'Force-os-horizontes-5',
     title: 'Forza Horizon 5',
